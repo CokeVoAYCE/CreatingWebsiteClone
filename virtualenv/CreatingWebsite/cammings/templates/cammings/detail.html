@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Camming: {% endblock %}
+
+{% block content %}
+    <body><h1>{{camming.title}}</h1></body>
+    <p>This camming has been scheduled on {{camming.date}}, at
+        {{camming.start_time}} in <strong> {{camming.room}}</strong>
+    </p>
+
+    <a href="{% url 'welcome' %}">Home</a>
+
+    </body>
+{% endblock %}

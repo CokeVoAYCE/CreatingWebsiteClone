@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block content %}
+    <h1>Welcome to the cam site</h1>
+    <p>
+        This is the demo application for the course 
+        <em>Django: Getting Started</em>
+        on <a href="https://www.pluralsight.com">
+            Pluralsight</a>
+    </p>
+
+    <h2>Cammings</h2>
+    <ul>
+        {% for camming in cammings %}
+            <li>
+                <a href="{% url 'detail' camming.id %}">
+                    {{ camming.title }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'rooms' %}">Rooms list</a>
+{% endblock %}
