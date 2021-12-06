@@ -7,3 +7,4 @@ from .models import Room
 admin.site.register(Camming)
 admin.site.register(Room)
 
+# test adding a commit
