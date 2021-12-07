@@ -6,7 +6,6 @@ from django.urls import path
 from django.views.decorators.cache import cache_control, cache_page
 from django.views.decorators.csrf import csrf_exempt
 
-# Create your views here.
 from django.http import HttpResponse, HttpResponseNotFound
 
 
